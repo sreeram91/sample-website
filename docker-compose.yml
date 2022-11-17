@@ -7,13 +7,10 @@ services:
     volumes:
       - /app/node_modules
       - ./build:/usr/share/nginx/html
-    ports:
-      - '3002:80'
   nginx:
-    depends_on:
-      - web
+    restart: always
     build:
       dockerfile: Dockerfile
       context: ./nginx
     ports:
-      - '5000:80'
+      - '80:80'
