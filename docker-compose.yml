@@ -8,4 +8,4 @@ services:
       - /app/node_modules
       - ./build:/usr/share/nginx/html
     ports:
-      - '3002:80'
+      - '80:80'
