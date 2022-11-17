@@ -9,3 +9,11 @@ services:
       - ./build:/usr/share/nginx/html
     ports:
       - '3002:80'
+  nginx:
+    depends_on:
+      - web
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - '3002:80'
