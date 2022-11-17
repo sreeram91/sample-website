@@ -1,0 +1,12 @@
+.inline{
+    display: inline;
+    color: red;
+}
+
+p{
+    display: inline;
+}
+
+.center-note{
+    padding: 5em 0 0 5em;
+}
